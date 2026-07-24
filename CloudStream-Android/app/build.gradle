@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.cloudstream.player'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.cloudstream.player"
+        minSdk 18
+        targetSdk 34
+        versionCode 5
+        versionName "1.4"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Pure Java and Android SDK. No 3rd party dependencies.
+    implementation 'org.bouncycastle:bcprov-jdk15to18:1.76'
+    implementation 'org.bouncycastle:bcutil-jdk15to18:1.76'
+    implementation 'org.bouncycastle:bctls-jdk15to18:1.76'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
+    implementation 'org.conscrypt:conscrypt-android:2.2.1'
+}

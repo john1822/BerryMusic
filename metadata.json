@@ -1,0 +1,6 @@
+{
+  "name": "BerryMusic",
+  "description": "Android 4.3 SoundCloud Client for BlackBerry Q10",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
